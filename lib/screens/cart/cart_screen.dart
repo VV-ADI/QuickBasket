@@ -163,7 +163,7 @@ class _CartItemTileState extends State<_CartItemTile>
 
   @override
   Widget build(BuildContext context) {
-    final cart = context.read<CartProvider>();
+    final cart = context.watch<CartProvider>();
     return FadeTransition(
       opacity: _fadeAnim,
       child: Container(
